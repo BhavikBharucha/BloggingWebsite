@@ -96,7 +96,7 @@ include '../config/connection.php';
                                         <?php
                                         } else {
                                         ?>
-                                            <a href="../login-register/login.php">Login</a>
+                                            <a href="../User/login.php">Login</a>
                                         <?php
                                         }
                                         ?>
@@ -137,7 +137,7 @@ include '../config/connection.php';
                             <?php
                             } else {
                             ?>
-                                <a href="../login-register/login.php" class="main-btn border-btn btn-hover wow fadeInUp" data-wow-delay=".6s">Log in and Get Started</a>
+                                <a href="../User/login.php" class="main-btn border-btn btn-hover wow fadeInUp" data-wow-delay=".6s">Log in and Get Started</a>
                             <?php
                             }
 
@@ -310,7 +310,7 @@ include '../config/connection.php';
                         </div>
                     </div>
                     <div class="btn" style="width:50%vw;">
-                        <a href="../askdoubt.php" class="main-btn btn-hover border-btn wow fadeInUp" data-wow-delay=".6s">Sign-in</a>
+                        <a href="../User/registration.php" class="main-btn btn-hover border-btn wow fadeInUp" data-wow-delay=".6s">Sign-in</a>
                     </div>
 
                 </div>

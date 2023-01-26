@@ -6,48 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bowling System</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://kit.fontawesome.com/cd742a0dd6.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <div class="body">
-        <div class="form-container sign-up-form">
-            <div class="imgBox sign-up-imgbox">
-                <div class="sliding-link">
-                    <p>Already a member?</p>
-                    <span class="sign-in-btn"><a href="login.html"> Sign in</a></span>
-                </div>
-                <img src="images/signup-img.png" alt="">
-            </div>
-            <div class="form-box sign-up-box">
-                <h2>Sign Up</h2>
-                <form action="register.php" method="post" enctype="multipart/form-data">
+        <div class="form-container sign-in-form">
+            <div class="form-box sign-in-box">
+                <h2> Login </h2>
+                <form action="" method="POST">
                     <div class="field">
                         <i class="fa-solid fa-at"></i>
                         <input type="email" name="email" placeholder="Email ID">
-                    </div>
-                    <div class="field">
-                        <i class="fa-regular fa-user"></i>
-                        <input type="text" name="user" placeholder="Full name">
-                    </div>
-                    <div class="field">
-                        <i class="fa-solid fa-phone"></i>
-                        <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
-                            maxlength="10" name="cont" placeholder="Phone Number">
+                       
                     </div>
                     <div class="field">
                         <i class="fa-solid fa-unlock"></i>
-                        <input type="password" maxlength="8" name="pwd" placeholder="Password">
+                        <input class="password-input" name="pwd" type="password" placeholder="Password">
+                        <div class="eye-btn"><i class="fa-solid fa-eye-slash"></i></div>
                     </div>
-                    <div class="field">
-                        <i class="fa-solid fa-key"></i>
-                        <input type="password" maxlength="8" name="cpwd" placeholder="Confirm password">
+                    <div class="forgot-link">
+                        <a href="forgetemail.php">Forget Password?</a>
                     </div>
-                        <input type="hidden" name="user_type" value="customer">
-                    <input class="submit-btn" type="submit" value="Sign Up">
+                    <input class="submit-btn" type="submit" value="Login">
                 </form>
-
+            </div>
+            <div class="imgBox sign-in-imgbox">
+                <div class="sliding-link">
+                    <p>Don't have an account?</p>
+                    <span class="sign-up-btn"><a href="registration.php"> Sign Up</a></span>
+                </div>
+                <img src="../assets/images/signin-img.png" alt="">
             </div>
         </div>
     </div>
